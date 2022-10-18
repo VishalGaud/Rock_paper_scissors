@@ -1,14 +1,12 @@
-const myArray = ["Rock", "Paper", "Scissors"];
+const myArray = ["rock", "paper", "scissors"];
 
 function getComputerChoice() {
 
     return myArray[Math.floor(Math.random() * myArray.length)];
 }
 
-// prompt("Enter your choice to start the game!", "rock, paper, scissors");
 
-function playRound(playerSelection, computerSelection) {
-    _playerSelection = ["rock", "paper", "scissors"];
+function playRound(_playerSelection, _computerSelection) {
 
     if (_playerSelection === _computerSelection) {
         return "It's a tie game"
@@ -26,6 +24,12 @@ function playRound(playerSelection, computerSelection) {
         return `You loose ${_computerSelection} beats ${_playerSelection}`
     }
 }
+
+const _playerSelection = "rock";
+console.log(_playerSelection);
+const _computerSelection = getComputerChoice();
+console.log(_computerSelection);
+console.log(playRound(_playerSelection, _computerSelection));
 
 
 
